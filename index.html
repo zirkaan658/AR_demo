@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AR Demo</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body { margin:0; padding:0; background-color:black; }
+    model-viewer { width:100vw; height:100vh; }
+  </style>
+</head>
+<body>
+  <model-viewer 
+    src="soft_drink.glb"
+    ios-src="soft_drink.usdz"
+    alt="3D Model"
+    ar
+    ar-modes="scene-viewer webxr quick-look"
+    camera-controls
+    auto-rotate
+    background-color="black">
+  </model-viewer>
+</body>
+</html>
